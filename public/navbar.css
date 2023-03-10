@@ -11,7 +11,7 @@ ul.navbar {
 }
 
 ul.navbar h2 {
-    padding-left: 30px;
+    padding-left: 5vw;
 }
 
 ul.navbar li {
@@ -20,6 +20,9 @@ ul.navbar li {
 
 ul.navbar li:first-child {
     float: left;
+}
+ul.navbar li:nth-child(2){
+    padding-right: 5vw;
 }
 
 ul.navbar a {
