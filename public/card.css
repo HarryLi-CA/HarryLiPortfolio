@@ -1,0 +1,37 @@
+.imgtxtcard img{
+    width: 50%;
+    float: left;
+    display:flex;
+    justify-content: center;
+}
+.imgtxtcard div{
+    width:50%;
+    float: right;
+    vertical-align:middle;
+}
+.imgtxtcard h1{
+    margin-left: 5vw;
+    font-size: 5vw;
+    color: black;
+}
+.imgtxtcard{
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+.imgtxtcard p{
+    font-size: 3vw;
+    margin: 0;
+    margin-left: 5vw;
+    padding: 0;
+    color: black;
+}
+.imgtxtcard ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    border: black;
+}
