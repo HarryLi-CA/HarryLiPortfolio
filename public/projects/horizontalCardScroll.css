@@ -1,0 +1,27 @@
+.hcardscroll div{
+    width: 20vw;
+    height: 20vw;
+    display: inline-block;
+    padding: auto;
+    text-align: center;
+}
+div.hcardscroll{
+    overflow-x: scroll;
+    overflow-y: clip;
+    height: 25vw;
+    white-space: nowrap;
+    scroll-padding-left: 1vw;
+    scroll-padding-right: 1vw;
+}
+div.hcardscroll ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.hcardscroll li{
+    display:block;
+}
+.hcardscroll h2{
+    font-size: 1.5vw;
+}
