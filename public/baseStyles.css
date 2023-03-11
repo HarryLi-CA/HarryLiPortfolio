@@ -6,6 +6,9 @@ body {
 p {
     margin: 5vw;
 }
+h1{
+    font-size: 3vw;
+}
 
 ul.unformatted{
     list-style-type: none;
@@ -17,4 +20,12 @@ ul.unformatted{
 
 div.footer{
     text-align: center;
+}
+.padSides{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+a{
+    color: black;
+    text-decoration: none;
 }
