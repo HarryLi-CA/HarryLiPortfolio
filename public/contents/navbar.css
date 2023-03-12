@@ -13,6 +13,7 @@ ul.navbar {
 ul.navbar h2 {
     padding-left: 5vw;
     font-size: 2vw;
+    vertical-align: middle;
 }
 
 ul.navbar li {
@@ -33,4 +34,8 @@ ul.navbar a {
     padding: 2vw 1.4vw;
     text-decoration: none;
     font-size: 1.5vw;
+}
+
+.navbar img{
+    width: 5vw;
 }
