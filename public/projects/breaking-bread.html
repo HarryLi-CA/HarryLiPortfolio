@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Harry Li</title>
     <link rel="icon" type="image/x-icon" href="../images/icon.png">
-    <meta name="description" content="Here are some of the projects I have worked on.">
+    <meta name="description" content="Braking bread is a mobile application which I have created.">
     <link rel="stylesheet" type="text/css" href="../contents/navbar.css">
     <link rel="stylesheet" href="../contents/baseStyles.css">
     <link rel="stylesheet" href="../contents/projects.css">
@@ -25,120 +25,124 @@
         <li><a href="../index.html"> Home </a></li>
     </ul>
     <div class="mainBody">
-        <div class="halfSpace" style="float: left;">
-            <h1>
-                Breaking Bread
-            </h1>
-            <p>
-                Breaking Bread is a mobile application dedicated to helping people break bread (share meals with
-                others).
-
-                <br /><br />
-
-                As noted by the first image on the right, I worked on the project along 3 friends for YRHacks
-                (the same group as I worked with in hack::peel).
-                It was a 24 hour hackathon resulting in working throughout the night to reach what we planned.
-                After my friends pitched the project and I answered some technical questions, the project achieved
-                the award of Best UI/UX.
-
-                <br /><br />
-
-                Here in the top left phone image we have a login page.
-                The purpose of the application needed to identify users seperately.
-                Unlike the previous project where we used email sign-in, Google sign-in was used.
-                It provides an easier sign-in process for the user and simplifies the process of implementing
-                authentication.
-                You can see the result of clicking the button by looking at the image to the right.
-                It works just like any other mobile application which you use Google authentication.
-                If you don't login properly, a red error text will appear from the previous page detailing the problem.
-
-                <br /><br />
-
-                After logging in successfully, the mobile application will look like the top right mobile screenshot.
-                Here you can see the various meals which were shared with the restaurant name, the cost for you to pay,
-                the due date for payment and the people which it was shared with.
-                Note that if they close the mobile application, they will still be signed in leading to the next
-                feature.
-
-                <br /><br />
-
-                If you click the top right profile icon, you will open a pop-up with account information(like in the
-                bottom left).
-                This includes your name, profile picture and email.
-                Signing out removes the users information from shared preferences allowing them be fully signed out.
-                There is a sign-out button which was extremely useful when testing the application as I had to
-                constantly test and design the login page.
-
-                <br /><br />
-
-                You can also add new bill seen in the bottom middle.
-                This would be done by the person who paid at the restaurant.
-                They would input all the information including who it was split with.
-                The app would create a bill, reference the people it's being split with and put a reference from those
-                users to the transaction.
-
-                <br /><br />
-
-                The bottom right mobile screenshot demonstrates that by clicking the top right checkmark,
-                the bill is removed from the list.
-                In this scenario, the "Tims" bill is completed.
-
-                <br /><br />
-
-                Next image is a picture of the sign-ins.
-                You can see the user email is logged and the different users can be separated.
-
-                <br /><br />
-
-                The second last picture shows the structure of how a User is stored in the database.
-                The Users are identified by their unique emails.
-                Each User contains the bill IDs in order to have a reference to their Bills
-                It also contains their name and profile picture so it could be displayed in the bills and profile view.
-
-                <br /><br />
-
-                The final picture shows how bills are stored.
-                It contains the restaurant, cost, due date as well as the Users in order to reference their data.
-
-                <br /><br />
-
-                One of the questions which was asked while presenting the application was if the whole bill would be
-                removed if clicked complete on it.
-                The answer would be: inside the User document, the reference to the Bill document is destroyed.
-                However, the Bill document will still have the User in order to keep displaying their profile picture
-                for the mobile application.
-                <br /> <br />
-                If you have any questions about the project,<br />
-                feel free to contact me at: <a href="mailto: contact@harryli.me"
-                    style="color: blue;">contact@harryli.me</a>
-            </p>
-
-        </div>
-        <div class="halfSpace" style="float: right;margin-right: 5vw;">
+        <h1>
+            Breaking Bread
+        </h1>
+        <p class="date">
+            Made from: March 3, 2023 to March 4, 2023.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages doubleImage">
             <img src="../images/bbreaduxui.png" alt="Breaking Bread Best UX/UI" />
+
             <img src="../images/bbread3dmodel.png" alt="Breaking Bread Phone 3d Model Screens" />
-            <div class="columns" style="height: 20vw;">
-                <img src="../images/bbreadlogin.png" alt="Breaking Bread Login Page" />
-                <img src="../images/bbreadgooglesignin.png" alt="Breaking Bread Google Sign-in Page" />
-                <img src="../images/bbreadhomepage.png" alt="Breaking Bread Home Page" />
-            </div>
-            <div class="columns" style="height: 20vw;">
-                <img src="../images/bbreadsignout.png" alt="Breaking Bread Login Page" />
-                <img src="../images/bbreadaddbill.png" alt="Breaking Bread Google Sign-in Page" />
-                <img src="../images/bbreadcompletedbill.png" alt="Breaking Bread Home Page" />
-            </div>
-            <img src="../images/bbreadauth.png" alt="Breaking Bread Logout" />
-            <img src="../images/bbreadusers.png" alt="Breaking Bread Users Database" />
-            <img src="../images/bbreadbills.png" alt="Breaking Bread Bills Database" />
-            <p>
-                Github Repository: <a href="https://github.com/HarryLi-CA/break_bread">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
-            </p>
         </div>
+        <div class="clear"></div>
+        <p>
+            Breaking Bread is a mobile application dedicated to helping people break bread (share meals with
+            others).
+            <br />
+            <br />
+
+            As noted by the image above on the left, I worked on the project along 3 friends for YRHacks
+            (the same group as I worked with in hack::peel).
+            It was a 24 hour hackathon resulting in working throughout the night to reach what we planned.
+            After my friends pitched the project and I answered some technical questions, the project achieved
+            the award of Best UI/UX.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages triplePhone">
+            <img src="../images/bbreadlogin.png" alt="Breaking Bread Login Page" class="phone" />
+            <img src="../images/bbreadgooglesignin.png" alt="Breaking Bread Google Sign-in Page" class="phone" />
+            <img src="../images/bbreadhomepage.png" alt="Breaking Bread Home Page" class="phone" />
+        </div>
+        <p>
+            Here in the first phone image we have a login page.
+            The purpose of the application needed to identify users seperately.
+            Unlike the previous project where we used email sign-in, Google sign-in was used.
+            It provides an easier sign-in process for the user and simplifies the process of implementing
+            authentication.
+            You can see the result of clicking the button by looking at the second image.
+            It works just like any other mobile application which you use Google authentication.
+            If you don't login properly, a red error text will appear from the previous page detailing the problem.
+        </p>
+        <p>
+            After logging in successfully, the mobile application will look like the last mobile screenshot.
+            Here you can see the various meals which were shared with the restaurant name, the cost for you to pay,
+            the due date for payment and the people which it was shared with.
+            Note that if they close the mobile application, they will still be signed in leading to the next
+            feature.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages triplePhone">
+            <img src="../images/bbreadsignout.png" alt="Breaking Bread Login Page" />
+            <img src="../images/bbreadaddbill.png" alt="Breaking Bread Google Sign-in Page" />
+            <img src="../images/bbreadcompletedbill.png" alt="Breaking Bread Home Page" />
+        </div>
+        <p>
+            If you click the top right profile icon, you will open a pop-up with account information(like the first image).
+            This includes your name, profile picture and email.
+            Signing out removes the users information from shared preferences allowing them be fully signed out.
+            There is a sign-out button which was extremely useful when testing the application as I had to
+            constantly test and design the login page.
+        </p>
+        <p>
+            You can also add new bill seen in the second image.
+            This would be done by the person who paid at the restaurant.
+            They would input all the information including who it was split with.
+            The app would create a bill, reference the people it's being split with and put a reference from those
+            users to the transaction.
+        </p>
+        <p>
+
+            The last mobile screenshot demonstrates that by clicking the top right checkmark,
+            the bill is removed from the list.
+            In this scenario, the "Tims" bill is completed.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages tripleImage">
+            <img src="../images/bbreadauth.png" alt="Breaking Bread Logout" />
+            <img src="../images/bbreadbills.png" alt="Breaking Bread Bills Database" />
+            <img src="../images/bbreadusers.png" alt="Breaking Bread Users Database" />
+        </div>
+        <div class="clear"></div>
+        <p>
+
+            The first above image is a picture of the sign-ins.
+            You can see the user email is logged and the different users can be separated.
+        </p>
+        <p>
+
+            The second picture shows the structure of how a User is stored in the database.
+            The Users are identified by their unique emails.
+            Each User contains the bill IDs in order to have a reference to their Bills
+            It also contains their name and profile picture so it could be displayed in the bills and profile view.
+        </p>
+        <p>
+
+            The final picture shows how bills are stored.
+            It contains the restaurant, cost, due date as well as the Users in order to reference their data.
+        </p>
+        <p>
+
+            One of the questions which was asked while presenting the application was if the whole bill would be
+            removed if clicked complete on it.
+            The answer would be: inside the User document, the reference to the Bill document is destroyed.
+            However, the Bill document will still have the User in order to keep displaying their profile picture
+            for the mobile application.
+        </p>
+        <p>
+            If you have any questions about the project,
+            feel free to contact me at: <a href="mailto: contact@harryli.me" style="color: blue;">contact@harryli.me</a>
+        </p>
+        <p>
+            This project has a public Github Repository: <a href="https://github.com/HarryLi-CA/break_bread">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+        </p>
     </div>
     <div class="clear"></div>
     <div class="footer">

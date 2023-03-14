@@ -1,11 +1,10 @@
-.halfSpace h1 {
+.mainBody h1 {
     margin-left: 5vw;
     margin-right: 5vw;
 }
 
-.halfSpace {
+.mainBody {
     margin-top: 8vw;
-    width: 45vw;
     overflow: hidden;
 }
 
@@ -14,35 +13,60 @@
     font-size: 1.5vw;
 }
 
-.halfSpace p {
-    font-size: 1.5vw;
+p {
+    font-size: 1.5em;
     margin-right: 0;
 }
-.halfSpace > img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:90%;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-}
-.halfSpace img{
-    display: block;
-}
 .columns{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    white-space: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    float: right;
 }
 
 .columns img{
     height: 100%;
-    display: inline-block;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+.date{
+    font-size: 1em;
+}
+.centredImages{
+    float: none; text-align: center; 
+}
+.doubleImage{
+    height: 15em;
+}
+.tripleImage{
+    height: 10em;
+}
+.triplePhone{
+    height: 20em;
+}
+
+@media (max-width:1100px){
+    .doubleImage{
+        height:auto;
+    }
+    .doubleImage img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-width:1550px){
+    .tripleImage{
+        height: auto;
+    }
+    .tripleImage img{
+        height: auto;
+        width: 40vh;
+    }
+}
+@media (max-width:850px){
+    .triplePhone{
+        height: auto;
+    }
+    .triplePhone img{
+        height: auto;
+        width: 40vh;
+    }
 }

@@ -27,7 +27,7 @@ ul.navbar a:not(.logoImage){
     display: block;
     color: #333;
     text-align: center;
-    padding: 2vw 1.4vw;
+    padding: 2vw 2vw;
     text-decoration: none;
     font-size: 1.5vw;
 }
