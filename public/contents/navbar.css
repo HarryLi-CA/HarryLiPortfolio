@@ -8,12 +8,8 @@ ul.navbar {
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-ul.navbar h2 {
-    padding-left: 5vw;
-    font-size: 2vw;
-    vertical-align: middle;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 ul.navbar li {
@@ -27,7 +23,7 @@ ul.navbar li:nth-child(2){
     padding-right: 5vw;
 }
 
-ul.navbar a {
+ul.navbar a:not(.logoImage){
     display: block;
     color: #333;
     text-align: center;
@@ -37,5 +33,6 @@ ul.navbar a {
 }
 
 .navbar img{
-    width: 5vw;
+    padding: 1vw 5vw;
+    height: 3.5vw;
 }
