@@ -42,11 +42,11 @@ p {
     height: 20em;
 }
 
-img {
+.mainBody img {
     transition:transform 0.25s ease;
 }
 
-img:hover {
+.mainBody img:hover {
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
 }
