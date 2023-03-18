@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Harry Li</title>
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+    <meta name="description" content="Braking bread is a mobile application which I have created.">
+    <link rel="stylesheet" type="text/css" href="../contents/navbar.css">
+    <link rel="stylesheet" href="../contents/baseStyles.css">
+    <link rel="stylesheet" href="../contents/projects.css">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li>
+            <a href="../index.html" class="logoImage">
+                <img src="../images/navbarName.png" alt="Harry Li's Icon" />
+            </a>
+        </li>
+        <li><a href="../contact.html"> Contact </a></li>
+        <li><a href="../aboutme.html"> About Me </a></li>
+        <li><a href="../projects.html"> Projects </a></li>
+        <li><a href="../index.html"> Home </a></li>
+    </ul>
+    <div class="mainBody">
+        <h1>
+            Warfare Chaos
+        </h1>
+        <p class="date">
+            Made from: April 22, 2018 to September 24, 2020.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosLogo.png" alt="Warfare Chaos Logo in Enviroment" />
+            <img src="../images/warfareChaosTankBattle.png" alt="Warfare Chaos Logo in Enviroment" />
+        </div>
+        <div class="clear"></div>
+        <p>
+            Warfare Chaos is a fun tank game where you can control a tank and move around damaging enemies.
+            <br />
+            <br />
+            This was my second large project. I used the Unity game engine which I had some previous experience with.
+            I also used C# as it was more popular and eventually Javascript got deprecated for using with Unity.
+            The project was created when I started messing around with the code from 3d runner game. I started to think
+            about
+            rotating the charecter and allowing it to freely move. I eventually learned to constantly read through
+            official
+            documentation and videos(Udemy and Youtube)
+            to figure out if I could use any of their features. I did 3D modeling and creating textures. I put various
+            features into the project and was
+            even looking at future features. I ran into Unity's new HDRP still in preview(it was very buggy) and
+            decided to try it out. This forced me to maintain many features that I had previously created and
+            gave me a better understanding of how to make what I coded better. I was planning to work
+            with a friend for the project which made me start using source control.
+            However, my friend never commited much to the project. This eventually led me to feel less
+            enthuastic. Another reason was that the project as a lacked a vision for the future. I learned to create
+            minimum
+            viable product feature lists in order to keep my motivation in future projects (such as when I created
+            projects with Dart).
+            <br /><br />
+            Also note that the pink object to the right of the screen is a ramp. It doesn't have proper texturing which is
+            why it is pink. I never got around to retexturing that specific object after moving the project to HDRP.
+        </p>
+        <div class="clear"></div>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosMain.png" alt="Warfare Chaos Early Version" />
+            <img src="../images/warfareChaosMainNew.png" alt="Warfare Chaos New Version" />
+        </div>
+        <p>
+            The first image is in the earlier version of the game which I mistakingly called "beta" and
+            the second is from the later version which I also mistakingly called "alpha".
+            You can see the second image's HDRP with things like fog and vignette. However,
+            many things were corrupted and needed maintance when switching to a pre-release version of Unity.
+        </p>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosCloudsKnockback.png" alt="Warfare Chaos Player Knockbacked to See Clouds" />
+            <img src="../images/warfareChaosEnemyHit.png" alt="Warfare Chaos Hit Enemy" />
+        </div>
+        <p>
+            From the first image you can see the enemy has hit the player causing knockback and having them tumble over.
+            From this view you can see the sky texture (which is one of the only components I did not make)
+            and more of the HDRP that comes with moving the project to HDRP.
+            You can also see the damage to the health bar.
+            The second image shows off the particle effects and the circular reload indicator in the bottom left.
+            You can also notice the circular minimap moving according to the camera view.
+            In the "beta" version, it was a square minimap but I believed that it was more appealing as circular so I
+            coded it.
+            Note that the method of damaging is hitscan meaning that no real projectile is fired but a ray in order to
+            see if there is something in front of the barrel.
+            There are 2 particle effects instanciated. 1 is for the barrels smoke and the other is for where the shot
+            landed.
+        </p>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosEnemyDestroyed.png" alt="Warfare Chaos Destroyed Enemy" />
+            <img src="../images/warfareChaosCameraAdaption.png" alt="Warfare Chaos Camera Adapting" />
+        </div>
+        <p>
+            You can see in the first image that the enemy was destroyed. This was only possible due to the enemy having
+            less health.
+            The enemy fully tracks the players exact position which allows them to hit the player precisely making it
+            hard to destroy.
+            In the second image, you can see more of the camera adapting.
+            It was done by constantly raycasting to find out how far the wall behind the tank was and poistioning the
+            camera accordingly.
+        </p>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosBarrelCollision.png" alt="Warfare Chaos Barrel Collider" />
+            <img src="../images/warfareChaosDialogue.png" alt="Warfare Chaos Dialogue" />
+        </div>
+        <p>
+            The first image shows that the turret's barrel has a collider, something that other tank
+            games often ignore. It had annoyed me a bit that in most game the barrel can just phase through walls.
+            The second image shows the creation of a dialogue manager which was to be integerated for
+            a better player experience.
+        </p>
+        <div class="columns centredImages doubleImage">
+            <img src="../images/warfareChaosTerrain.png" alt="Warfare Chaos Early Version Terrain" />
+            <img src="../images/warfareChaosMenuScreen.png" alt="Warfare Chaos Main Menu" />
+        </div>
+        <p>
+            The first image shows the messing around of terrain which I did for the early version of the project.
+            You can see that I coded the turret to be capable of rugged landscapes while keeping its collider.
+            The second image shows the start screen for the game in a hanger.
+
+        </p>
+        <p>
+            <b>Unique Fact</b><br />
+            As I made this project during my elementary school years, I did not know about trigonmetry.
+            This resulted in the player going faster when on a 45 degree angle as it would result in a
+            √2 speed compared to normal. <br/>
+            Also, you might have noticed the collab button having an error beside it.
+            This is because the original method of source control which I used
+            for the Unity game engine got deprecated.
+        </p>
+        <p>
+            If you have any questions about the project,
+            feel free to contact me at: <a href="mailto: contact@harryli.me" style="color: blue;">contact@harryli.me</a>
+        </p>
+        <p>
+            This project does not have a repository however I am more than happy to send files over if you contact me.
+        </p>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <p>©Copyright 2023<br />Harry Li</p>
+        <!--TODO: design and add more footer information-->
+    </div>
+</body>
+
+</html>
