@@ -1,5 +1,7 @@
 .imgtxtcard img{
-    width: 50%;
+    object-fit: cover;
+    height: 35vw;
+    width: 35vw;
     float: left;
     display:flex;
     justify-content: center;
