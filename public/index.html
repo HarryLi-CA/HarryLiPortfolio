@@ -20,8 +20,9 @@
       color: white;
     }
 
-    .introductionText {
+    #introductionText {
       font-size: 2.5vw;
+      margin-top: -15%;
     }
 
     .emojiText {
@@ -33,26 +34,27 @@
       width: 100%;
     }
   </style>
+  <script defer src="scripts/opaqueScrollClose.js"></script>
 </head>
 
 <body>
-  <ul class="navbar">
+  <ul class="navbar invertOpaque" id="navbar">
     <li>
       <a href="index.html" class="logoImage">
-        <img src="images/navbarName.png" alt = "Harry Li's Icon"/>
+        <img src="images/navbarName.png" alt = "Harry Li's Icon" id="harryicon"/>
       </a>
     </li>
     <li><a href="contact.html"> Contact </a></li>
     <li><a href="aboutme.html"> About Me </a></li>
     <li><a href="projects.html"> Projects </a></li>
-    <li><a href="#"> Home </a></li>
+    <li><a href="index.html"> Home </a></li>
   </ul>
   <div style="width:100%">
     <h1 class="overText">Software Developer</h1>
     <img src="images/harryliphoto.png" class="mainImage" alt="Harry Li Photo with Blue Background">
   </div>
   <p class="emojiText">🤝</p>
-  <p class="introductionText"><b>Hi, I'm Harry.</b> I love to develop all sorts of applications. Constantly during
+  <p class="introductionText" id = "introductionText"><b>Hi, I'm Harry.</b> I love to develop all sorts of applications. Constantly during
     my spare time, I've been learning the brilliant different dynamics which software development provides. I enjoy
     facing challenges and collaborating with others in order to overcome them.
   </p>
