@@ -4,6 +4,7 @@ ul.navbar {
     padding: 0;
     overflow: hidden;
     background-color: white;
+    border-bottom: 1px solid black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,9 +31,22 @@ ul.navbar a:not(.logoImage){
     padding: 2vw 2vw;
     text-decoration: none;
     font-size: 1.5vw;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 .navbar img{
     padding: 1vw 5vw;
-    height: 3.5vw;
+    height: 3.5vw;/* change opaque scroll code before modification*/
+    filter:invert(100%);
+    mix-blend-mode: difference;
+}
+
+ul.invertOpaque{
+    background-color: transparent;
+    mix-blend-mode: difference;
+}
+
+ul.invertOpaque img{
+    height: 12.5vw; /* change opaque scroll code before modification*/
 }

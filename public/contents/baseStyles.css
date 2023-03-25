@@ -1,6 +1,7 @@
 body {
     font-size: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
 }
 
 p {
@@ -24,8 +25,8 @@ div.footer{
     text-align: center;
 }
 .padSides{
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 a{
     color: black;
