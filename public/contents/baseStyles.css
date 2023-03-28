@@ -2,6 +2,7 @@ body {
     font-size: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
+    margin: 0;
 }
 
 p {
@@ -22,8 +23,21 @@ ul.unformatted{
 }
 
 div.footer{
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height:100%;
     text-align: center;
+    padding: 4vw 0;
 }
+
+.footer p{
+    text-align: center;
+    width: 100%;
+    margin: 0 6vw;
+}
+
 .padSides{
     margin-left: 5vw;
     margin-right: 5vw;
