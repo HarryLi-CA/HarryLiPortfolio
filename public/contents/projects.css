@@ -21,7 +21,7 @@ p {
     float: right;
 }
 
-.columns img{
+.columns img, .columns svg{
     height: 100%;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -42,16 +42,16 @@ p {
     height: 20em;
 }
 
-.mainBody img {
+.mainBody img, .mainBody svg{
     transition:transform 0.25s ease;
 }
 
-.mainBody img:hover {
+.mainBody img:hover, .mainBody svg:hover{
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
 }
 
-.tripleImage img:hover{
+.tripleImage img:hover, .tripleImage svg:hover{
     -webkit-transform:scale(2);
     transform:scale(2);
 }
@@ -59,7 +59,7 @@ p {
     .doubleImage{
         height:auto;
     }
-    .doubleImage img{
+    .doubleImage img, .doubleImage svg{
         width: 100%;
         height: auto;
     }
@@ -69,11 +69,11 @@ p {
     .tripleImage{
         height: auto;
     }
-    .tripleImage img{
+    .tripleImage img, .tripleImage svg{
         height: auto;
         width: 40vh;
     }
-    .tripleImage img:hover{
+    .tripleImage img:hover, .tripleImage svg:hover{
         -webkit-transform:scale(1.5);
         transform:scale(1.5);
     }
@@ -83,7 +83,7 @@ p {
     .triplePhone{
         height: auto;
     }
-    .triplePhone img{
+    .triplePhone img, .triplePhone svg{
         height: auto;
         width: 40vh;
     }
