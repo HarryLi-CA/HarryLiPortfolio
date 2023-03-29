@@ -26,8 +26,10 @@ div.hcardscroll ul{
     font-size: 1.5vw;
 }
 
-.hcardscroll img{
+.hcardscroll img, .hcardscroll svg{
     vertical-align: middle;
+    width: 100%;
+    display:inline-block;
 }
 .hcardscroll span {
     display: inline-block;
