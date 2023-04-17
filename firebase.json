@@ -6,11 +6,24 @@
       "**/.*",
       "**/node_modules/**"
     ],
-
-    "rewrites" :[ {
-      "source": "**",
-      "destination": "/index.html"
-    }],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "regex": "^/([^./]{10,}|comments)([/.].*)?",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/about-me",
+        "destination": "/aboutme",
+        "type": 301
+      }
+    ],
     "cleanUrls": true,
     "trailingSlash": false
   }

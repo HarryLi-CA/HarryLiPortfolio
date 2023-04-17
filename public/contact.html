@@ -2,10 +2,18 @@
 <html>
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMYKT3T4YK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GMYKT3T4YK');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Harry Li</title>
-    
+
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -22,13 +30,11 @@
           }]
         }
     </script>
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
     <meta name="description" content="Here are some of the projects I have worked on.">
     <link rel="stylesheet" type="text/css" href="contents/navbar.css">
     <link rel="stylesheet" href="contents/baseStyles.css">
     <style>
-
-        
         h1 {
             margin-left: 5vw;
             margin-right: 5vw;
@@ -44,13 +50,16 @@
             text-align: right;
             font-size: 1.5vw;
         }
-        .introText{
+
+        .introText {
             font-size: 2vw;
         }
-        @media (max-width:700px){
-            h1{
-            font-size: 2em;
+
+        @media (max-width:700px) {
+            h1 {
+                font-size: 2em;
             }
+
             .halfSpace {
                 width: 50%;
             }
@@ -59,7 +68,7 @@
                 font-size: 1em;
             }
 
-            .introText{
+            .introText {
                 font-size: 1em;
             }
         }
@@ -70,7 +79,7 @@
     <ul class="navbar">
         <li>
             <a href="index.html" class="logoImage">
-                <img src="images/navbarName.png" alt = "Harry Li's Icon"/>
+                <img src="/images/navbarName.png" alt="Harry Li's Icon" />
             </a>
         </li>
         <li><a href="contact.html"> Contact </a></li>
