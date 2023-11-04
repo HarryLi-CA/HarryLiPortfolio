@@ -1,0 +1,276 @@
+img{
+    height: 50px;
+}
+
+div.hero{
+    text-align: center;
+}
+
+div.hero p{
+    margin: 0em;
+}
+
+div.hero h1{
+    font-size: 5em;
+}
+
+div.hero div.imageCrop{
+    height: 25em;
+    position: relative;
+}
+div.hero button{
+    position: absolute;
+    left: 50%;
+    bottom: 1em;
+    transform: translate(-50%, 0);
+}
+
+div.quickInfo>div{
+    padding: 1em 0 0 5em;
+}
+div.quickInfo>div{
+    margin-left: 5em;
+}
+
+div.quickInfo>div:first-child{
+    float: left;
+}
+
+div.quickInfo>div:last-child{
+    text-align: center;
+}
+
+div.quickInfo>div:last-child>div{
+    display: inline-block;
+    text-align: left;
+}
+
+@media (max-width:950px) {
+    div.quickInfo>div:last-child>div>div{
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+
+div.quickInfo h2{
+    font-size: 1.75em;
+}
+
+.aboutMe{
+    background-color: #F5F5F5;
+    margin: 1em 0;
+}
+
+.aboutMe>div{
+    position: relative;
+    text-align: center;
+    background-color: #D0ECF2;
+}
+
+.aboutMe div.imageCrop{
+    height: 30em;
+}
+
+.aboutMe h2{
+    position: absolute;
+    width: 80%;
+    left:50%;
+    top: 1em;
+    transform: translate(-50%, 0);
+}
+
+.aboutMe button{
+    position: absolute;
+    left:50%;
+    bottom: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.projects{
+
+}
+
+.projectGallery{
+    position: relative;
+    margin: 0em 5em;
+    height: 35em;
+}
+.projectGallery>div{
+    position: absolute;
+    top: 10%;
+    height: 25em;
+    width: 20em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00407A;
+    transition: linear 0.25s;
+    text-align: center;
+}
+
+@media (max-width:100em) { /* For everything currently*/
+    .projectGallery{
+        height: 45vw;
+    }
+    .projectGallery>div{
+        height: 37vw;
+        width: 32vw;
+    }
+}
+
+.projectGallery h3{
+    margin-top: 2vw;
+    color:#00407A;
+}
+.projectGallery button{
+    width: 10em;
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width:1100px) {
+    .projectGallery h3{
+        font-size: 3vw;
+    }
+    .projectGallery button{
+        width: 10vw;
+        font-size: 2vw;
+    }
+
+    .projectGallery .hideOnSmall{
+        display: none;
+    }
+}
+
+.projectGallery p{
+    position: absolute;
+    left: 50%;
+    bottom: 5em;
+    width: 100%;
+    padding: 0 2em;
+    transform: translate(-50%, 0);
+}
+@media (max-width:1100px) {
+    .projectGallery p{
+        display: none;
+    }
+}
+
+.projectCTA h2{
+    margin-left: 5em;
+}
+
+.contact{
+    background-color: whitesmoke;
+    padding: 3em 3em;
+    display: flex;
+}
+.contact>div{
+    text-align: center;
+    margin-RIGHT: auto;
+    margin-left: auto;
+}
+
+.contact>div:first-child{
+    float: left;
+    margin-right: 3em;
+    margin-left: auto;
+}
+
+
+.contact>div:last-child>div{
+    text-align: left;
+    display:inline-block
+}
+
+footer{
+    background-color: #002244;
+    color: white;
+    display: flex;
+    padding: 2em;
+    font-size: 0.75em;
+}
+
+footer img{
+    height: 8em;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul>li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer>div{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer>div>div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a{
+    color: white !important;
+}
+footer .removeWhiteUnder a{
+    text-decoration:none;
+}
+
+@media (max-width: 900px){
+    
+    footer{
+        display: block;
+    }
+    footer>div{
+        width: auto;
+        margin: 1em 0;
+    }
+    footer>div>div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.imageCrop{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+button{
+    background-color: #007BFF;
+    border: none;
+    border-radius: 30px !important;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    color: #007BFF !important;
+}
+
+.secondaryColor{
+    color: #00407A;
+}
+body{
+    color: #002244 !important;
+}
+
+h1, h2{
+    font-weight: bold;
+}

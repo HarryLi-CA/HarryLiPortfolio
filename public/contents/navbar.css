@@ -50,3 +50,7 @@ ul.invertOpaque{
 ul.invertOpaque img{
     height: 12.5vw; /* change opaque scroll code before modification*/
 }
+
+.logoImage h1{
+    margin: 0;
+}

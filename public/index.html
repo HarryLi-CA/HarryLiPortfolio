@@ -1,152 +1,276 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMYKT3T4YK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-GMYKT3T4YK');
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harry Li</title>
   <link rel="icon" type="image/x-icon" href="/images/icon.png">
   <meta name="description" content="Hi, I'm Harry, a Software Developer. Welcome to my website portfolio." />
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://harryli.me/",
-        "logo": "https://harryli.me/images/icon.png"
-      }
-  </script>
   <link rel="canonical" href="https://harryli.me/" />
-  <link rel="stylesheet" href="/contents/navbar.css" />
-  <link rel="stylesheet" href="/contents/baseStyles.css" />
-  <link rel="stylesheet" href="/contents/card.css" />
-  <style>
-    .overText {
-      position: absolute;
-      top: 25vw;
-      left: 65%;
-      font-size: 3vw;
-      color: white;
-    }
-
-    #introductionText {
-      font-size: 2.5vw;
-      margin-top: -15%;
-      margin-left: 5vw;
-      margin-right: 5vw;
-    }
-    .introductionText {
-      font-size: 2.5vw;
-      margin-left: 5vw;
-      margin-right: 5vw;
-    }
-
-    .emojiText {
-      margin-top: -15%;
-      font-size: 15vw;
-    }
-
-    img.mainImage {
-      width: 100%;
-    }
-  </style>
-  <script defer src="/scripts/opaqueScrollClose.js"></script>
+  <link rel="stylesheet" href="/contents/style.css">
+  <link rel="stylesheet" href="/contents/nav.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+  <script src="/scripts/projectGallery.js"></script>
 </head>
 
 <body>
-  <ul class="navbar invertOpaque" id="navbar">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+    <a class="navbar-brand" href="/index">
+        <img src="/images/icon.png"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsing-navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class= "collapse navbar-collapse text-center" id="collapsing-navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+  <!--<ul class="navbar invertOpaque" id="navbar">
     <li>
       <a href="/index.html" class="logoImage">
-        <img src="/images/navbarName.png" alt="Harry Li's Icon" id="harryicon" />
+        <h1>
+          <img src="/images/navbarName.png" alt="Harry Li's Icon" id="harryicon" />
+        </h1>
       </a>
     </li>
     <li><a href="/contact.html"> Contact </a></li>
     <li><a href="/aboutme.html"> About Me </a></li>
     <li><a href="/projects.html"> Projects </a></li>
     <li><a href="/index.html"> Home </a></li>
-  </ul>
-  <div style="width:100%">
-    <h1 class="overText">Software Developer</h1>
-    <img src="/images/harryliphoto.png" class="mainImage" alt="Harry Li Photo with Blue Background">
-  </div>
-  <p class="emojiText">🤝</p>
-  <h1 class="introductionText" id="introductionText">Hi, I'm Harry Li.</h1>
-  <p class="introductionText"> I love to develop all sorts of applications.
-    Constantly during
-    my spare time, I've been learning the brilliant different dynamics which software development provides. I enjoy
-    facing challenges and collaborating with others in order to overcome them.
+  </ul>-->
+  <div class="hero">
+  <p>
+    Hi 👋, I'm...
   </p>
-  <ul class="unformatted">
-    <li>
-      <div class="imgtxtcard">
-        <a href="/projects.html">
-          <ul>
-            <li>
-              <img src="/images/allProjectsTransparentBack.png" alt="All Projects with Transparent Background"
-                class="cardImage" />
-            </li>
-            <li>
-              <div>
-                <h1>Software Projects</h1>
-                <p>
-                  I've been enjoying creating endless projects to keep me challenged and learning.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </li>
-    <li>
-      <div class="imgtxtcard">
-        <a href="/aboutme.html">
-          <ul>
-            <li>
-              <img src="/images/placeholder.png" alt="Placeholder Image" style="float:right" />
-            </li>
-            <li>
-              <div style="float:left">
-                <h1>About Me</h1>
-                <p>
-                  Take a peek into my experiences in the journey of software development.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </li>
-    <li>
-      <div class="imgtxtcard">
-        <a href="/contact.html">
-          <ul>
-            <li>
-              <img src="/images/placeholder.png" alt="Placeholder Image" />
-            </li>
-            <li>
-              <div>
-                <h1>Contact</h1>
-                <p>
-                  I am happy to answer any questions or concerns and give more detailed information.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </a>
-      </div>
-    </li>
-  </ul>
-  <div class="footer">
-    <p>©Copyright 2023<br />Harry Li <br /> <br /> All rights reserved.</p>
-    <!--TODO: design and add more footer information-->
+  <h1>
+    Harry Li
+  </h1>
+  <p>
+    a student at the University of Toronto, Computer Engineering.
+  </p>
+  <div>
+    <div class="imageCrop" style="background-image: url('/images/placeholder.png');">
+      <a href="/portfolio">
+        <button> Explore My Work </button>
+      </a>
+    </div>
   </div>
+</div>
+  <div class="quickInfo">
+    <div>
+      <h2>
+        I'm a software engineer. <br/> <span class="secondaryColor">Ready to develop any software application.</span>
+      </h2>
+    </div>
+    <div>
+      <div>
+      <div>
+        Want to contact me? <br />
+        <a href="mailto:harryken.li@mail.utoronto.ca">harryken.li@mail.utoronto.ca</a>
+      </div>
+      <div>
+        Looking for my resume? <br/>
+        <a href="/resume.pdf">Click here to see pdf.</a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <section class="aboutMe">
+    <div>
+      <div class="imageCrop" style="background-image: url('/images/placeholder.png');">
+      </div>
+      <h2>I'm Harry Li, <span class="secondaryColor">a software engineer with a passion to explore the limitless potential of technology.</span></h2>
+      <a href="/aboutme">
+      <button> Explore My Story</button>
+      </a>
+    </div>
+  </section>
+
+  <div class="projects">
+    <div class="projectGallery">
+      <div class="highlightProject" style="background-image: url('/images/placeholder.png');" onclick="tappedProject(this, true)">
+        <h3>
+          Project 1
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          View<span class="hideOnSmall"> More Info</span>
+        </button>
+      </div>
+      <div class="highlightProject" style="background-image: url('/images/placeholder.png');" onclick="tappedProject(this, true)">
+        <h3>
+          Project 2
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          View<span class="hideOnSmall"> More Info</span>
+        </button>
+      </div>
+      <div class="highlightProject" style="background-image: url('/images/placeholder.png');" onclick="tappedProject(this, true)">
+        <h3>
+          Project 3
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          View<span class="hideOnSmall"> More Info</span>
+        </button>
+      </div>
+      <div class="highlightProject" style="background-image: url('/images/placeholder.png');" onclick="tappedProject(this, true)">
+        <h3>
+          Project 3
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          View<span class="hideOnSmall"> More Info</span>
+        </button>
+      </div>
+      <div class="highlightProject" style="background-image: url('/images/placeholder.png');" onclick="tappedProject(this, true)">
+        <h3>
+          Project 3
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          View<span class="hideOnSmall"> More Info</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      setup();
+      keepRotating();
+    </script>
+    <br/>
+    <div class="projectCTA">
+      <h2>
+        Want to see more? <a href="/projects">Explore More Projects.</a>
+      </h2>
+    </div>
+  </div>
+  <div class="contact">
+    <div>
+      <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20vw" viewBox="0 0 716.296 582">
+        <path id="Path_1" data-name="Path 1" d="M716.3,443.662v328.2q0,27.281-18.787,46.709T652.341,838H63.955q-26.381,0-45.168-19.428T0,771.864v-328.2a214.159,214.159,0,0,0,40.372,35.962q144.7,101.685,198.66,142.607,22.784,17.361,36.974,27.075t37.773,19.841q23.583,10.127,43.969,10.127h.8q20.386,0,43.969-10.127T440.29,649.3q14.19-9.714,36.974-27.075,67.952-50.842,199.06-142.607A222.857,222.857,0,0,0,716.3,443.662Zm0-121.526q0,32.655-19.586,62.416a193.5,193.5,0,0,1-48.766,50.842Q497.649,543.28,460.875,569.734q-4,2.893-16.988,12.607T422.3,598.049q-8.594,5.994-20.785,13.434a119.291,119.291,0,0,1-22.984,11.161,61.648,61.648,0,0,1-19.986,3.72h-.8a61.648,61.648,0,0,1-19.986-3.72,119.292,119.292,0,0,1-22.984-11.161q-12.191-7.44-20.785-13.434t-21.585-15.707q-12.991-9.714-16.988-12.607Q219.046,543.28,150.694,494.3t-81.942-58.9q-24.783-17.361-46.767-47.742T0,331.23q0-32.242,16.588-53.736T63.955,256H652.341q25.982,0,44.968,19.428T716.3,322.136Z" transform="translate(0 -256)" fill="#4c6b95"/>
+      </svg>
+    </div>
+    </div>
+    <div>
+    <div>
+      <h2> Want to get in touch?</h2>
+      <p>
+        Email Me: <br/>
+        <a href="mailto:harryken.li@mail.utoronto.ca"> harryken.li@mail.utoronto.ca </a>
+      </p>
+      <p>
+        Looking for my resume? <br/>
+        <a href="/resume.pdf"> https://harryli.me/resume.pdf </a>
+      </p>
+      <p>
+        Looking for something specific? <br/>
+        <a href="/contact">
+        <button> Fill the Contact Form </button>
+        </a>
+      </p>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+    <div>
+      <img src="/images/icon.png"/>
+    </div>
+    <div>
+        <ul>
+          <li>
+        <b>
+          Navigation
+        </b>
+      </li>
+      <li>
+        <a href="/index.html">Home </a>
+      </li>
+      <li>
+        <a href="/aboutme.html">About Me </a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects </a>
+      </li>
+      <li>
+        <a href="/index.html">Contact </a>
+      </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>
+        <b>
+          Contact
+        </b> <br/>
+        <a href="mailto:harryken.li@mail.utoronto.ca"> harryken.li@mail.utoronto.ca </a>
+      </p>
+      <div class = "removeWhiteUnder">
+      <a href="https://www.linkedin.com/in/harry-li-3b085b188" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+          <path fill = "#FFFFFF" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/HarryLi-CA" target="_blank">
+        <svg height="3em" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="3em" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+          <path fill = "#FFFFFF" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+        </svg>  
+      </a> 
+      &nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/HarryLi-CA" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+          <path fill = "#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1.5 16.5h-5v-1h5v1zm3-5.832l-.811-4.668-.996.173.81 4.668.997-.173zm-2.982 3.468l-4.873-.488-.093 1.008 4.878.439.088-.959zm.269-1.293l-4.639-1.304-.263.977 4.653 1.25.249-.923zm.602-1.207l-4.149-2.432-.514.871 4.148 2.433.515-.872zm.933-.734l-2.67-3.914-.836.569 2.67 3.915.836-.57zm-1.322 2.098v4h-6v-4h-1v5h8v-5h-1z"></path>
+      </svg>  
+      </a>
+      </div>
+    </div>
+    <div>
+        <b>
+          Copyright © 2023 Harry Li
+        </b> 
+        <br/><br/>
+        All rights reserved.
+    </div>
+    </div>
+  </footer>
 </body>
 
 </html>
