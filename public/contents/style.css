@@ -50,6 +50,9 @@ div.quickInfo>div:last-child>div{
         display: inline-block;
         margin: 0 20px;
     }
+    div.quickInfo>div{
+        margin: 0 1em;
+    }
 }
 
 div.quickInfo h2{
@@ -159,7 +162,14 @@ div.quickInfo h2{
 }
 
 .projectCTA h2{
-    margin-left: 5em;
+    margin: 0 2em;
+}
+
+@media (max-width:850px) {
+    .projectCTA h2{
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .contact{
