@@ -134,6 +134,10 @@ div.quickInfo h2{
     transform: translate(-50%, 0);
 }
 
+.highlightProject{
+    background-size: 100%; background-position: 50% 27%; background-repeat: no-repeat;
+}
+
 @media (max-width:1100px) {
     .projectGallery h3{
         font-size: 3vw;
@@ -145,6 +149,10 @@ div.quickInfo h2{
 
     .projectGallery .hideOnSmall{
         display: none;
+    }
+
+    .highlightProject{
+        background-position: 50% 40%;
     }
 }
 
