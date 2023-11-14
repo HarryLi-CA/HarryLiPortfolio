@@ -81,6 +81,7 @@ div.quickInfo h2{
     left:50%;
     top: 1em;
     transform: translate(-50%, 0);
+    mix-blend-mode: difference;
 }
 
 .aboutMe button{
@@ -112,7 +113,7 @@ div.quickInfo h2{
     text-align: center;
 }
 
-@media (max-width:100em) { /* For everything currently*/
+/* For everything currently*/
     .projectGallery{
         height: 45vw;
     }
@@ -120,7 +121,6 @@ div.quickInfo h2{
         height: 37vw;
         width: 32vw;
     }
-}
 
 .projectGallery h3{
     margin-top: 2vw;
